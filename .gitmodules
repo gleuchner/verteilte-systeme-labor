@@ -1,0 +1,3 @@
+[submodule "core/vis-productservice"]
+	path = core/vis-productservice
+	url = https://github.com/gleuchner/vis-productservice.git
