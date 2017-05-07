@@ -1,3 +1,9 @@
 [submodule "core/vis-productservice"]
 	path = core/vis-productservice
 	url = https://github.com/gleuchner/vis-productservice.git
+[submodule "core/vis-categoryservice"]
+	path = core/vis-categoryservice
+	url = https://github.com/gleuchner/vis-categoryservice.git
+[submodule "composite/is-productcategoryservice"]
+	path = composite/is-productcategoryservice
+	url = https://github.com/gleuchner/vis-productcategoryservice.git
