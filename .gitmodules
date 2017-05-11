@@ -5,5 +5,14 @@
 	path = core/vis-categoryservice
 	url = https://github.com/gleuchner/vis-categoryservice.git
 [submodule "composite/is-productcategoryservice"]
-	path = composite/is-productcategoryservice
+	path = composite/vis-productcategoryservice
 	url = https://github.com/gleuchner/vis-productcategoryservice.git
+[submodule "infrastructure/vis-zuul"]
+	path = infrastructure/vis-zuul
+	url = https://github.com/gleuchner/vis-zuul.git
+[submodule "infrastructure/vis-eureka"]
+	path = infrastructure/vis-eureka
+	url = https://github.com/gleuchner/vis-eureka.git
+[submodule "core/vis-userservice"]
+	path = core/vis-userservice
+	url = https://github.com/gleuchner/vis-userservice.git
