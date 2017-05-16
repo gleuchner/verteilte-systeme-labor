@@ -1,0 +1,22 @@
+version: '2'
+services:
+  product:
+    build: core/vis-productservice/
+    ports:
+      - "8080:8080"
+  category:
+    build: core/vis-categoryservice/
+    ports:
+      - "8081:8080"
+  user:
+    build: core/vis-userservice/
+    ports:
+      - "8082:8080"
+  productcategory:
+    build: composite/vis-productcategoryservice/
+    ports:
+      - "8090:8080"
+  eureka:
+    build: infrastructure/vis-eureka/
+    ports:
+      - "8761:8761"
