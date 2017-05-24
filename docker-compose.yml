@@ -20,3 +20,7 @@ services:
     build: infrastructure/vis-eureka/
     ports:
       - "8761:8761"
+  zuul:
+    build: infrastructure/vis-zuul/
+    ports:
+      - "8762:8762"
