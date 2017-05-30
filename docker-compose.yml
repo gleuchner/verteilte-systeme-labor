@@ -41,14 +41,10 @@ services:
     ports:
       - "8761:8761"
   zuul:
-<<<<<<< HEAD
     image: java:8
     working_dir: /app
     volumes:
         - ./infrastructure/vis-zuul/target:/app
     command: java -jar /app/zuul-server-0.0.1-SNAPSHOT.jar
-=======
-    build: infrastructure/vis-zuul/
->>>>>>> c48f4e7f11f022958efa042bb8457802de57a945
     ports:
       - "8762:8762"
