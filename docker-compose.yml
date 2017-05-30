@@ -1,22 +1,50 @@
 version: '2'
 services:
   product:
-    build: core/vis-productservice/
+    image: java:8
+    working_dir: /app
+    volumes:
+        - ./core/vis-productservice/target:/app
+    command: java -jar /app/product-0.0.1-SNAPSHOT.jar
     ports:
       - "8080:8080"
   category:
-    build: core/vis-categoryservice/
+    image: java:8
+    working_dir: /app
+    volumes:
+        - ./core/vis-categoryservice/target:/app
+    command: java -jar /app/category-0.0.1-SNAPSHOT.jar
     ports:
-      - "8081:8080"
+      - "8081:8081"
   user:
-    build: core/vis-userservice/
+    image: java:8
+    working_dir: /app
+    volumes:
+        - ./core/vis-userservice/target:/app
+    command: java -jar /app/userservice-1.0-SNAPSHOT.jar
     ports:
-      - "8082:8080"
+      - "8082:8082"
   productcategory:
-    build: composite/vis-productcategoryservice/
+    image: java:8
+    working_dir: /app
+    volumes:
+        - ./composite/vis-productcategoryservice/target:/app
+    command: java -jar /app/productandcategoryservice-0.0.1-SNAPSHOT.jar
     ports:
-      - "8090:8080"
+      - "8090:8090"
   eureka:
-    build: infrastructure/vis-eureka/
+    image: java:8
+    working_dir: /app
+    volumes:
+        - ./infrastructure/vis-eureka/target:/app
+    command: java -jar /app/eureka-server-0.0.1-SNAPSHOT.jar
     ports:
       - "8761:8761"
+  zuul:
+    image: java:8
+    working_dir: /app
+    volumes:
+        - ./infrastructure/vis-zuul/target:/app
+    command: java -jar /app/zuul-server-0.0.1-SNAPSHOT.jar
+    ports:
+      - "8762:8762"

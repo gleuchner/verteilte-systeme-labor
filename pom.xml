@@ -10,12 +10,12 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>infrastructure/vis-eureka</module>
+        <module>infrastructure/vis-zuul</module>
         <module>core/vis-categoryservice</module>
         <module>core/vis-productservice</module>
         <module>core/vis-userservice</module>
         <module>composite/vis-productcategoryservice</module>
-        <module>infrastructure/vis-eureka</module>
-        <module>infrastructure/vis-zuul</module>
     </modules>
 
 </project>
