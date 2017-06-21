@@ -48,3 +48,11 @@ services:
     command: java -jar /app/zuul-server-0.0.1-SNAPSHOT.jar
     ports:
       - "8762:8762"
+  authserver:
+    image: java:8
+    working_dir: /app
+    volumes:
+        - ./infrastructure/vis-authserver/target:/app
+    command: java -jar /app/hello-oauth-srv-1.0-SNAPSHOT.jar
+    ports:
+      - "8763:8763"
