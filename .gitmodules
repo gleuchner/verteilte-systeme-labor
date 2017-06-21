@@ -16,3 +16,6 @@
 [submodule "core/vis-userservice"]
 	path = core/vis-userservice
 	url = https://github.com/gleuchner/vis-userservice.git
+[submodule "infrastructure/vis-authserver"]
+	path = infrastructure/vis-authserver
+	url = git@github.com:gleuchner/vis-authserver.git
