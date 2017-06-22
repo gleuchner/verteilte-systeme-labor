@@ -19,3 +19,6 @@
 [submodule "infrastructure/vis-authserver"]
 	path = infrastructure/vis-authserver
 	url = git@github.com:gleuchner/vis-authserver.git
+[submodule "frontend/vis-client"]
+	path = frontend/vis-client
+	url = https://github.com/gleuchner/vis-client.git

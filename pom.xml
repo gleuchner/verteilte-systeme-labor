@@ -17,6 +17,7 @@
         <module>core/vis-productservice</module>
         <module>core/vis-userservice</module>
         <module>composite/vis-productcategoryservice</module>
+        <module>frontend/vis-client</module>
     </modules>
 
 </project>
