@@ -3,6 +3,5 @@
   "details" : "details",
   "name" : "name",
   "price" : 30.0,
-  "categoryName" : "cat1",
   "categoryId" : "1"
 }
