@@ -29,9 +29,10 @@ services:
     working_dir: /app
     volumes:
         - ./composite/vis-productcategoryservice/target:/app
-    command: java -jar /app/productandcategoryservice-0.0.1-SNAPSHOT.jar
+    command: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=1090 -jar /app/productandcategoryservice-0.0.1-SNAPSHOT.jar
     ports:
       - "8090:8090"
+      - "1090:1090"
   eureka:
     image: java:8
     working_dir: /app
