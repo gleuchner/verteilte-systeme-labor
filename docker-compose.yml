@@ -57,3 +57,10 @@ services:
     command: java -jar /app/hello-oauth-srv-1.0-SNAPSHOT.jar
     ports:
       - "8763:8763"
+  frontend:
+    image: tomcat:latest
+    volumes:
+        - ./frontend/vis-client/target/EShop-1.0.0.war:/usr/local/tomcat/webapps/EShop.war
+        - ./frontend/vis-client/target/EShop-1.0.0.war:/usr/local/tomcat/webapps/ROOT.war
+    ports:
+      - "8000:8080"
