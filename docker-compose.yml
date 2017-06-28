@@ -54,9 +54,10 @@ services:
     working_dir: /app
     volumes:
         - ./infrastructure/vis-authserver/target:/app
-    command: java -jar /app/hello-oauth-srv-1.0-SNAPSHOT.jar
+    command: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=1063 -jar /app/hello-oauth-srv-1.0-SNAPSHOT.jar
     ports:
       - "8763:8763"
+      - "1063:1063"
   frontend:
     image: tomcat:latest
     volumes:
